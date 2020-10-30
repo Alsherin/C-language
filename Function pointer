@@ -1,0 +1,16 @@
+# C-language
+#include <stdio.h>
+int sum(int,int);
+int main()
+{
+    
+    int (*fp) ();
+    fp=sum;
+    int sum = (*fp) (10,20);
+    printf("%d",sum);
+}
+
+int sum(int x,int y)
+{
+    return x+y;
+}
